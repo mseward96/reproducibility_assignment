@@ -1,0 +1,11 @@
+---
+title: "Main Analysis"
+author: "Max"
+format: html
+editor: visual
+---
+
+```{r}
+stroop_data <- read.delim("https://raw.githubusercontent.com/Lakens/Stroop/master/stroop.txt",header = TRUE)
+write.table(stroop_data, file = "stroop.csv", quote = FALSE, row.names = FALSE, sep = ",")
+```
